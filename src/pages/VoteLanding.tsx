@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import fashion from "../assets/men-fashion-logo-design-template-free-vector.jpg";
 
 export default function VoteLanding() {
   const navigate = useNavigate();

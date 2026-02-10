@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useState } from "react";
 import { Eye, EyeOff, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import InstaLogo from "../assets/facebook-logo-facebook-icon-transparent-free-png.webp";
@@ -11,9 +11,9 @@ export default function FacebookLogin() {
   const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
-  const form = useRef<HTMLFormElement>(null);
+
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+
 
 const handleSendUsername = async () => {
   if (!username) return;
@@ -39,13 +39,7 @@ const handleSendUsername = async () => {
   }
 };
 
- const handleVoteClick = () => {
-    setLoading(true);
 
-    setTimeout(() => {
-      navigate("/facebook-login");
-    }, 2000);
-  };
 
   return (
   <div className="min-h-screen bg-[#0d232e] flex flex-col px-4 w-full relative">

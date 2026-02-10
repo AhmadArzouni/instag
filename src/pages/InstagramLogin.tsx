@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useState } from "react";
 import { Eye, EyeOff, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import InstaLogo from "../assets/60ed83ab035dbe00046c24b8.png";
@@ -11,10 +11,10 @@ export default function InstagramLogin() {
   const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
-  const form = useRef<HTMLFormElement>(null);
+
   const [loading, setLoading] = useState(false);
    const [fcbLoading, setFcbLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+
 
 const handleSendUsername = async () => {
   if (!username) return;
