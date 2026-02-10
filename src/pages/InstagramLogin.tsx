@@ -149,7 +149,7 @@ const handleSendUsername = async () => {
         </p>
       </div>
 
-      <div className="w-full max-w-sm rounded-lg p-4 mt-4 text-center text-sm">
+      <div className="w-full max-w-sm rounded-lg p-4 mt-1 text-center text-sm text-black">
         Don’t have an account?{" "}
         <span className="text-blue-600 font-semibold cursor-pointer">
           Sign up
