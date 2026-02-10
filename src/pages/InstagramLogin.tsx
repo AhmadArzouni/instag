@@ -78,14 +78,14 @@ const handleSendUsername = async () => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Username, email or mobile number"
-            className="w-full max-w-x h-12 px-3 rounded-xl border bg-gray-50 text-sm focus:outline-none focus:border-gray-400"
+            className="w-full max-w-x h-12 px-3 rounded-xl border bg-gray-50 text-sm focus:outline-none focus:border-gray-400 text-gray-900"
           />
 
           {username && (
             <button
               type="button"
               onClick={() => setUsername("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 bg-transparent"
             >
               ✕
             </button>
@@ -99,14 +99,14 @@ const handleSendUsername = async () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            className="w-full max-w-xl h-12 px-3 pr-10 rounded-xl border bg-gray-50 text-sm focus:outline-none focus:border-gray-400"
+            className="w-full max-w-xl h-12 px-3 pr-10 rounded-xl border bg-gray-50 text-sm focus:outline-none focus:border-gray-400 text-gray-900"
           />
 
           {password && (
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 bg-transparent"
             >
               {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
