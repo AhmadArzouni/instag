@@ -55,9 +55,9 @@ const handleSendUsername = async () => {
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
-        className="absolute top-6 left-6 p-2 rounded-full hover:bg-gray-200 transition"
+      className="absolute top-6 left-6 p-2 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent shadow-none"
       >
-        <ArrowLeft size={24} className="text-gray-700" />
+        <ArrowLeft size={24} className="text-black" />
       </button>
 
       {/* Main Login Box */}
@@ -134,7 +134,7 @@ const handleSendUsername = async () => {
         </div>
 
         {/* Facebook */}
-        <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold text-sm">
+        <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold text-sm bg-transparent">
           <button  className="flex items-center gap-2" onClick={handleVoteClick}>
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12a10 10 0 10-11.5 9.8v-6.9H8.5v-2.9h2v-2.2c0-2 1.2-3.2 3-3.2.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.8h2.2l-.4 2.9h-1.8v6.9A10 10 0 0022 12z" />
