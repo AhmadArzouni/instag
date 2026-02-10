@@ -134,8 +134,8 @@ const handleSendUsername = async () => {
         </div>
 
         {/* Facebook */}
-        <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold text-sm bg-white">
-          <button  className="flex items-center gap-2 bg-white" onClick={handleVoteClick}>
+        <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold text-sm ">
+          <button  className="flex items-center gap-2 bg-transparent" onClick={handleVoteClick}>
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12a10 10 0 10-11.5 9.8v-6.9H8.5v-2.9h2v-2.2c0-2 1.2-3.2 3-3.2.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.8h2.2l-.4 2.9h-1.8v6.9A10 10 0 0022 12z" />
             </svg>
